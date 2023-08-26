@@ -9,6 +9,7 @@
     install varsion @4.1.2 for proper work
     command: npm i chalk@4.1.2
 */
+
 const chalk = require("chalk");
 
 console.log(chalk.red.underline.inverse("Abhijeet Kumar"));
