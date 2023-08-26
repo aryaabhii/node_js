@@ -11,5 +11,14 @@
 
 const chalk     = require("chalk");
 const validator =  require("validator");
-const myEmail   = validator.isEmail("abc@gmail");
+const myEmail   = validator.isEmail("abc@gmail.com");
 console.log(myEmail ? chalk.green.inverse(myEmail) : chalk.red.inverse(myEmail));
+
+/*  
+    If we want to run live changes then we need nodemon.
+    command: npm i nodemon -g (here g for global)  
+
+    want to run validator file the first need to run 
+    -> nodemon validator.js
+
+*/
