@@ -23,7 +23,7 @@ const server = http.createServer((req, res) => {
     } else if (req.url == "/user_api") {
         // here getting data from user.json
         res.writeHead(200, {"content-type" : "application/json"}); // it will send status code
-        res.end(objData[1].name);
+        res.end(objData[2].username);
     } else {
         res.writeHead(404, {"content-type" : "text/html"}); // it will send status code
         res.end("<h1>404! error</h1>");

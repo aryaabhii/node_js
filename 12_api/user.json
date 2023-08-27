@@ -1,7 +1,7 @@
 [
     {
         "id" : 1,
-        "nam" : "Leanne Graha",
+        "name" : "Leanne Graha",
         "username" : "bret",
         "email" : "graha@april.biz",
         "address" : {
@@ -24,7 +24,7 @@
     },
     {
         "id" : 2,
-        "nam" : "Lone Bruh",
+        "name" : "Lone Bruh",
         "username" : "cret",
         "email" : "graha@huyh.biz",
         "address" : {
@@ -47,7 +47,7 @@
     },
     {
         "id" : 3,
-        "nam" : "Leanne Graha",
+        "name" : "Leanne Graha",
         "username" : "bret",
         "email" : "graha@april.biz",
         "address" : {
@@ -70,7 +70,7 @@
     },
     {
         "id" : 4,
-        "nam" : "Lone Bruh",
+        "name" : "Lone Bruh",
         "username" : "cret",
         "email" : "graha@huyh.biz",
         "address" : {
