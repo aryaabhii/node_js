@@ -6,10 +6,10 @@
 */
 
 const bioData = {
-    name : "Abhijeet Kumar",
-    email: "aryaabhi@gmail.com",
-    age: 21,
-    channel: "TechnoAbhijeeT"
+    name    : "Abhijeet Kumar",
+    email   : "aryaabhi84@gmail.com",
+    age     : 21,
+    channel : "TechnoAbhijeeT"
 }
 
 // console.log(bioData.name);

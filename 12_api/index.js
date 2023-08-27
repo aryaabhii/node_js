@@ -6,24 +6,25 @@
 */
 
 
-
+// file system module.
 const fs = require("fs");
 
 // import http module.
 const http = require("http");
 
+// http server
 const server = http.createServer((req, res) => {
-    // console.log(req.url); // this will help us to get the url.
 
-    const data = fs.readFileSync(`${__dirname}/user.json`, "utf-8");
-    const objData = JSON.parse(data);
+    // here i am using syncronous module bcz I don't want to reload data again and again.. 
+    const data = fs.readFileSync(`${__dirname}/user.json`, "utf-8"); // here is the complete path of json file.
+    const objData = JSON.parse(data); // here converting array data into object.
 
     if (req.url == "/") {
         res.end("<h1>Home page</h1>")
     } else if (req.url == "/user_api") {
         // here getting data from user.json
         res.writeHead(200, {"content-type" : "application/json"}); // it will send status code
-        res.end(objData[2].username);
+        res.end(objData[2].name); // here getting getting
     } else {
         res.writeHead(404, {"content-type" : "text/html"}); // it will send status code
         res.end("<h1>404! error</h1>");
